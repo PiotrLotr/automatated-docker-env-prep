@@ -18,3 +18,5 @@
 
 > Note: In order to be able to connect to your docker's  servers using vagrant host browser, you have to add proper routing. Please provide this command in windows CLI:
 `$ route ADD 192.168.100.100 MASK 255.255.255.255 <vagrant-host-ip-adrresss>`
+
+![alt text](https://github.com/PiotrLotr/automatated-docker-env-prep.git/master/Bridged_network_VM.jpeg?raw=true)
