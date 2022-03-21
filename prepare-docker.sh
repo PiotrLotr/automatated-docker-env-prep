@@ -1,9 +1,9 @@
 #!/bin/bash
 
-apt update -y && apt upgrade -y
+apt-get update -y && apt-get upgrade -y
 
-apt install docker.io -y
-apt install docker-compose -y
+apt-get install docker.io -y && usermod -a -G docker vagrant
+apt-get install docker-compose -y
 
-usermod -a -G docker vagrant
+# apt-get install pass gnupg2
 
