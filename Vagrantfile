@@ -12,8 +12,7 @@ Vagrant.configure("2") do |config|
       vb.memory = 4096
     end
     # user data:
-    vb.vm.provision "file", source: "./prepare-docker.sh", destination: "./prepare-docker.sh"
-    vb.vm.provision "shell", 
-      inline: "/bin/sh ./prepare-docker.sh"
+    # vb.vm.provision "file", source: "./prepare-docker.sh", destination: "./prepare-docker.sh"
+    vb.vm.provision "shell", path: "prepare-docker.sh"
   end  
 end
